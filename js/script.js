@@ -11,12 +11,10 @@ $('.btn').on('click', function(){
             
             //console.log(image);
             
-            var img = '<img src="' + image.url + '" alt= "' + image.title + '">';
+            var img='<img src="' + image.url + '" alt= "' + image.title + '">' + '<br><p>' + image.title +'</p>';
             //console.log(img);
 
             return $('<div>').addClass('image').html(img);
-
-            //return $('#tasks').addClass('image').data('title', image.title).html(image.albumId);
         });
         $('#tasks').html(imageHTML);
     });
